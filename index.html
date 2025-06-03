@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+ <meta charset="UTF-8">
+ <title>区间和的个数 可视化演示</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="pixel-container">
+  <h1 class="pixel-title" style="text-align: center;">📊 区间和的个数 可视化演示</h1>
+
+  <div class="pixel-card">
+   <label>请输入数组（以逗号分隔）：</label>
+   <input id="arrayInput" type="text" placeholder="如 -2,5,-1">
+
+   <label>请输入区间 [lower, upper]：</label>
+   <input id="lowerInput" type="number" placeholder="如 -2">
+   <input id="upperInput" type="number" placeholder="如 2">
+
+   <div class="pixel-buttons">
+    <button onclick="startAnimation()">开始演示</button>
+    <button onclick="clearAll()">清空</button>
+   </div>
+  </div>
+
+  <div class="pixel-card">
+   <h2>🌀 动画演示区域</h2>
+   <div id="visualizationArea">
+    <p>👉 点击“开始演示”查看算法运行动画</p >
+   </div>
+  </div>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>
